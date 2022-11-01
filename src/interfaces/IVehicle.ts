@@ -6,8 +6,8 @@ const VehicleZodSchema = z.object({
   color: z.string().min(3),
   status: z.boolean().optional(),
   buyValue: z.number().int(),
-})
+});
 
-type IVehicle = z.infer<typeof VehicleZodSchema>
+type IVehicle = z.infer<typeof VehicleZodSchema>;
 
-export { VehicleZodSchema, IVehicle }
+export { VehicleZodSchema, IVehicle };
