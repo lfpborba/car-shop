@@ -12,11 +12,11 @@ type ErrorCatalog = Record<ErrorTypes, ErrorResponseObject>;
 
 const errorCatalog: ErrorCatalog = {
   EntityNotFound: {
-    message: 'Entity Not Found',
+    message: 'Object not found',
     httpStatus: 404,
   },
   InvalidMongoId: {
-    message: 'Id must be a 24 characters hexadecimal',
+    message: 'Id must have 24 hexadecimal characters',
     httpStatus: 400,
   },
 };
