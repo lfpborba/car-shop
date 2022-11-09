@@ -21,7 +21,6 @@ abstract class MongoModel<T> implements IModel<T> {
       throw Error('InvalidMongoId');
     }
 
-    
     return this._model.findOne({ id });
   }
 

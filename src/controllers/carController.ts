@@ -7,7 +7,7 @@ class CarController {
 
   public async create(req: Request, res: Response<ICar>, next: NextFunction) {
     try {
-      const dataCar = await this._service.create(req.body)
+      const dataCar = await this._service.create(req.body);
       return res.status(201).json(dataCar);
     } catch (err) {
       next(err);
@@ -16,8 +16,8 @@ class CarController {
 
   public async read(req: Request, res: Response<ICar[]>, next: NextFunction) {
     try {
-      const dataCar = await this._service.read()
-      return res.status(200).json(dataCar)
+      const dataCar = await this._service.read();
+      return res.status(200).json(dataCar);
     } catch (err) {
       next(err);
     }

@@ -11,7 +11,7 @@ class CarServices implements IService<ICar> {
   }
 
   public async create(obj: ICar): Promise<ICar> {
-    const parsed = CarZodSchema.safeParse(obj)
+    const parsed = CarZodSchema.safeParse(obj);
     if (!parsed.success) {
       throw parsed.error;
     }
@@ -19,7 +19,7 @@ class CarServices implements IService<ICar> {
   }
 
   public async read(): Promise<ICar[]> {
-    return this._car.read()
+    return this._car.read();
   }
 
   public async readOne(_id: string): Promise<ICar> {
