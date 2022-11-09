@@ -19,7 +19,7 @@ class MotocycleController {
       const getAll = await this._service.read();
       return res.status(200).json(getAll);
     } catch (err) {
-      next(err)
+      next(err);
     }
   }
 
@@ -29,7 +29,7 @@ class MotocycleController {
       const getById = await this._service.readOne(id as string);
       return res.status(200).json(getById);
     } catch (err) {
-      next(err)
+      next(err);
     }
   }
 
@@ -39,7 +39,7 @@ class MotocycleController {
       const updated = await this._service.update(id, req.body);
       return res.status(200).json(updated);  
     } catch (err) {
-      next(err)
+      next(err);
     }
   }
 
@@ -49,7 +49,7 @@ class MotocycleController {
       await this._service.delete(id);
       return res.status(204).json();
     } catch (err) {
-      next(err)
+      next(err);
     }
   }
 }

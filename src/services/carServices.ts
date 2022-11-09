@@ -42,7 +42,6 @@ class CarServices implements IService<ICar> {
   }
 
   public async delete(_id: string): Promise<ICar> {
-    console.log(_id);
     const car = await this._car.delete(_id);
 
     if (!car) throw new Error(ErrorTypes.EntityNotFound);
