@@ -1,10 +1,15 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# 💻 Projeto
+Construção de uma API com CRUD para gerenciar uma concessionária de veículos aplicando os princípios de Programação Orientada a Objetos (POO). Isso foi feito utilizando o banco de dados MongoDB.
+# 🚀 Tecnologias
+Este projeto foi desenvolvido com as seguintes tecnologias:
+- Typescript
+- MongoDB
+- Mongoose
+- Chai, Jest, Mocha, Sinon
+# 📌 Habilidades
+Neste projeto, desenvolvi as seguintes habilidades:
+- Utilizar o banco de dados MongoDB e o ODM Mongoose.
+- Criar uma API REST com typescript.
+- Escrever testes com chai, sinon, jest e mocha.
+- Realizar validações com Zod e Joi.
+- Utilizar interfaces e classes genéricas.
